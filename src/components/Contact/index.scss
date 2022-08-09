@@ -65,7 +65,7 @@
     }
   }
   p {
-    font-size: 13px;
+    font-size: 15px;
     color: #fff;
     font-family: 'M PLUS Code Latin', sans-serif;
     font-weight: 300;
@@ -145,14 +145,15 @@
 
 .info-map {
   position: absolute;
-  background: #000;
-  top: 50px;
-  right: 30%;
+  background: rgba(0, 0, 0, 0.838);
+  border-radius: 15px;
+  top: 385px;
+  right: 7px;
   z-index: 999999;
   width: 267px;
   padding: 20px;
   color: #fff;
-  font-family: 'Helvetica';
+  font-family: 'M PLUS Code Latin', sans-serif;
   font-size: 17px;
   font-weight: 300;
   opacity: 0;
@@ -161,7 +162,9 @@
 
   span {
     font-size: 16px;
-
+    display: block;
+    padding: 10px 0;
+    color: #ffd700;
     span {
       color: #ffd700;
     }
