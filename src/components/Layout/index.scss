@@ -95,6 +95,12 @@
     }
   }
 
+  .text-animate-hover {
+    &:hover {
+      color: #fff;
+    }
+  }
+
   .text-zone {
     position: absolute;
     left: 10%;
@@ -104,11 +110,5 @@
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
-  }
-
-  .text-animate-hover {
-    &:hover {
-      color: #fff;
-    }
   }
 }
