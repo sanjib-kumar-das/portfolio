@@ -3,7 +3,7 @@ import LogoTitle from "../../assets/images/namelogo.png";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
-import Logo from "./Logo";
+// import Logo from "./Logo";
 import Loader from "react-loaders";
 
 const Home = () => {
@@ -60,7 +60,10 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo></Logo>
+        <div className="homepic">
+          <img src="../../assets/images/icon.gif" alt="homepic" />
+        </div>
+        {/* <Logo></Logo> */}
       </div>
       <Loader type="pacman" />
     </>
