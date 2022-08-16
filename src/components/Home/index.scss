@@ -11,12 +11,12 @@
     color: #fff;
     font-size: 53px;
     margin: 0;
-    font-family: 'M PLUS Code Latin', sans-serif;
+    font-family: "M PLUS Code Latin", sans-serif;
     font-weight: 400;
 
     &::before {
-      content: '<h1>';
-      font-family: 'la belle aurore';
+      content: "<h1>";
+      font-family: "la belle aurore";
       color: #ffd700;
       font-size: 18px;
       position: absolute;
@@ -26,8 +26,8 @@
     }
 
     &::after {
-      content: '<h1/>';
-      font-family: 'la belle aurore';
+      content: "<h1/>";
+      font-family: "la belle aurore";
       color: #ffd700;
       font-size: 18px;
       position: absolute;
@@ -37,9 +37,9 @@
       opacity: 0.6;
     }
     img {
-      width: 32px;
+      width: 52px;
       margin-left: 20px;
-      padding-right: 2px;
+      padding-right: 1px;
       opacity: 0;
       height: auto;
       animation: rotateIn 1s linear both;

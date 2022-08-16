@@ -1,36 +1,36 @@
-import './index.scss'
-import LogoTitle from '../../assets/images/logo-s.png'
-import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
-import Loader from 'react-loaders'
+import "./index.scss";
+import LogoTitle from "../../assets/images/namelogo.png";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import AnimatedLetters from "../AnimatedLetters";
+import Logo from "./Logo";
+import Loader from "react-loaders";
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['a', 'n', 'j', 'i', 'b']
+  const [letterClass, setLetterClass] = useState("text-animate");
+  const nameArray = ["a", "n", "j", "i", "b"];
   const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
+    "w",
+    "e",
+    "b",
+    " ",
+    "d",
+    "e",
+    "v",
+    "e",
+    "l",
+    "o",
+    "p",
+    "e",
+    "r",
+    ".",
+  ];
 
   useEffect(() => {
     setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 4000);
+  }, []);
 
   return (
     <>
@@ -64,7 +64,7 @@ const Home = () => {
       </div>
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
