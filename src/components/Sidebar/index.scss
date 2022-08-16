@@ -11,6 +11,10 @@
     display: block;
     padding: 8px 0;
 
+    .logopic {
+      width: 60px;
+    }
+
     img {
       display: block;
       margin: 8px auto;
@@ -18,7 +22,7 @@
       height: auto;
 
       &.sub-logo {
-        width: 50px;
+        width: 40px;
       }
     }
   }
@@ -58,7 +62,7 @@
       }
 
       &:after {
-        content: '';
+        content: "";
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -73,27 +77,27 @@
 
       &:first-child {
         &:after {
-          content: 'HOME';
-          font-family: 'Helvetica Neue';
+          content: "HOME";
+          font-family: "Helvetica Neue";
         }
       }
     }
 
     a.about-link {
       &:after {
-        content: 'ABOUT';
+        content: "ABOUT";
       }
     }
 
     a.contact-link {
       &:after {
-        content: 'CONTACT';
+        content: "CONTACT";
       }
     }
 
     a.portfolio-link {
       &:after {
-        content: 'PORTFOLIO';
+        content: "PORTFOLIO";
       }
     }
 

@@ -1,26 +1,27 @@
-import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "./index.scss";
+import LogoS from "../../assets/images/icon.gif";
+// import LogoS from "../../../public/icon.png";
+import LogoSubtitle from "../../assets/images/logo_sub.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faGithub,
   faTelegram,
-} from '@fortawesome/free-brands-svg-icons'
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
   faUser,
   faEnvelope,
   faSuitcase,
-} from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+} from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
-        <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <img className="logopic" src={LogoS} alt="Logo" />
+        {/* <img className="sub-logo" src={LogoSubtitle} alt="slobodan" /> */}
       </Link>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
@@ -77,7 +78,7 @@ const Sidebar = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

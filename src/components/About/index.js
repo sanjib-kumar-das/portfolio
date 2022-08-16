@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useEffect, useState } from 'react'
-import AnimatedLetters from '../AnimatedLetters'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
+import AnimatedLetters from "../AnimatedLetters";
 import {
   faHtml5,
   faCss3,
@@ -8,17 +8,17 @@ import {
   faNodeJs,
   faJsSquare,
   faGitAlt,
-} from '@fortawesome/free-brands-svg-icons'
-import './index.scss'
-import Loader from 'react-loaders'
+} from "@fortawesome/free-brands-svg-icons";
+import "./index.scss";
+import Loader from "react-loaders";
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
   useEffect(() => {
     setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 3000);
+  }, []);
   return (
     <>
       <div className="container about-page">
@@ -26,7 +26,7 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
               idx={20}
             />
           </h1>
@@ -44,6 +44,16 @@ const About = () => {
             person, father of a beautiful daughter, a sports fanatic,
             photography enthusiast, and tech-obsessed!!!
           </p>
+
+          <div className="div">
+            <a
+              className="flat-button"
+              href={require("../../assets/resume.pdf")}
+              download="Resume of Sanjib Kumar das"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
 
         <div className="stage-cube-cont">
@@ -71,7 +81,7 @@ const About = () => {
       </div>
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
